@@ -1,3 +1,31 @@
+server:
+  port: 8081
+  netty:
+    max-initial-line-length:
+
+spring:
+  application:
+    name: notification_service
+  kafka:
+    bootstrap-servers: localhost:9092
+  mail:
+    host: smtp.yandex.ru
+    port: 465
+    protocol: smtps
+    username: marinamarkovaqw@yandex.ru
+    password: fdtjhrmipyckxkzw
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+          ssl:
+            enable: true
+            trust: smtp.yandex.ru
+        debag: false
+mail:
+  debag: true
 eureka:
   client:
     service-url:
