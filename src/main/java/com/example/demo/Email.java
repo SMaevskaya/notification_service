@@ -22,4 +22,16 @@ public class Email {
     }
 
     public Email(){}
+
+    public String getToAddress(){
+        return toAddress;
+    }
+
+    public String getSubject(){
+        return subject;
+    }
+
+    public String getText(){
+        return text;
+    }
 }
